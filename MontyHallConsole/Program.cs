@@ -1,10 +1,17 @@
 ﻿using MontyHallConsole;
 
+//https://en.wikipedia.org/wiki/Monty_Hall_problem
+/*
+ * Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats.
+ * You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat.
+ * He then says to you, "Do you want to pick door No. 2?" Is it to your advantage to switch your choice?
+ */
+
 //The Contestants are on a GameShow where they have to choose one of three doors.  If they choose the winning door they win a prize.
 var contestants = GameShow.GetContestants(10000);
 
 
-//Scenario 1
+//Scenario 1: Contestants keep their original door choice
 var stayWinners = new List<Contestant>();
 var stayLosers = new List<Contestant>();
 
@@ -28,7 +35,7 @@ Console.WriteLine("StayLosers: " + stayLosers.Count);       //2/3
 
 ///////////////////////
 
-//Scenario 2
+//Scenario 2: Contestants switch their door choice
 var switchWinners = new List<Contestant>();
 var switchLosers = new List<Contestant>();
  
