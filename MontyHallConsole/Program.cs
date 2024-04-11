@@ -10,7 +10,6 @@
 //The Contestants are on a GameShow where they have to choose one of three doors.  If they choose the winning door they win a prize.
 var contestants = GameShow.GetContestants(10000);
 
-
 //Scenario 1: Contestants keep their original door choice
 var stayWinners = new List<Contestant>();
 var stayLosers = new List<Contestant>();
